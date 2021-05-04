@@ -4,7 +4,8 @@ const app = new Vue({
     data: {
         messaggio:'Hello Vue!',
         miaClasse: "",
-        nuovaClasse: ""
+        nuovaClasse: "",
+        urlImg:"https://avatars1.githubusercontent.com/u/6128107?s=400&amp;v=4"
     },
     methods:{
         changeColor(classe){
@@ -12,6 +13,7 @@ const app = new Vue({
         },
         keyUp(){
             this.miaClasse = this.nuovaClasse;
+            this.nuovaClasse="";
         }
     }
 

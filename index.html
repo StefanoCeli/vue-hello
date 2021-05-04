@@ -13,12 +13,15 @@
 
     <div id="app">
 
+        <img :src="urlImg" alt="">
+
         <h1 :class="miaClasse">{{ messaggio }}</h1>
 
         <!-- per richiamare l'evento click usare la chiocciola  -->
         <button @click="changeColor('blue')">Testo in blu</button>
         <button @click="changeColor('purple')">Testo in viola</button>
 
+        
         <!-- <input type="text" v-model="miaClasse" @keyup.enter="keyUp"> -->
         <input type="text" v-model="nuovaClasse" @keyup.enter="keyUp">
         
